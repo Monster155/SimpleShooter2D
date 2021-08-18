@@ -6,7 +6,7 @@ namespace New_Scripts
 {
     public class MainWeapon : Weapon
     {
-        [Inject(Id = "Keyboard")] private IInputController _inputController;
+        [Inject] private IInputController _inputController;
 
         private void FixedUpdate()
         {

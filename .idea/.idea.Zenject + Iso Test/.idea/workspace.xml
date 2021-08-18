@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c74f397-5e44-4a0a-ac30-24e1750014f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/New Scripts/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zenject + Iso Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zenject + Iso Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/CharacterHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/CharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/ICharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/ICharacter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/Character.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/MainWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/MainWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Gun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IInputController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IInputController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/KeyboardController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/KeyboardController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MyMonoInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MyMonoInstaller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +43,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c34986f8340f4ee898dfd401af37235e1b600/69/7ccda712/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/New Scripts/SecondaryWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/ISpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b8bc167de93e4cd7acb3fce533dc4cbc13a000/ae/bb4bd17f/Time.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/New Scripts/ICharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/New Scripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b8bc167de93e4cd7acb3fce533dc4cbc13a000/c6/d9bb17d3/TooltipAttribute.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1wqgc0pzZRetArZM3OIeVodvXdM" />
@@ -83,8 +101,16 @@
       <workItem from="1629191624325" duration="868000" />
       <workItem from="1629207555469" duration="4659000" />
       <workItem from="1629272920372" duration="17919000" />
-      <workItem from="1629297723917" duration="307000" />
+      <workItem from="1629297723917" duration="4370000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit&#10;Created simple player with gun&#10;Created updated weapon system">
+      <created>1629298147769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629298147769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +135,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial commit&#10;Created simple player with gun&#10;Created updated weapon system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;Created simple player with gun&#10;Created updated weapon system" />
   </component>
 </project>

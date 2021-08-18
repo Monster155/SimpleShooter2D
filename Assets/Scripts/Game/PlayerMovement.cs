@@ -9,7 +9,7 @@ namespace Game
         [SerializeField] private float _movingSpeed = 10f;
         [SerializeField] private GameObject _playerModel;
 
-        [Inject(Id = "Keyboard")] private IInputController _inputController;
+        [Inject] private IInputController _inputController;
 
         private void FixedUpdate()
         {

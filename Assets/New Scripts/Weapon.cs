@@ -31,6 +31,9 @@ namespace New_Scripts
         [SerializeField] [Tooltip("Time is seconds between two queues")]
         private float _queueReloadTime = 0.5f;
 
+        // TODO create changing single / burst / auto shooting
+        // TODO change burst mode - queue reloading while no attack
+
         private int _currentBulletsCountInQueue;
         private int _currentAmmoInClipCount;
         private int _currentLeftAmmoCount;
@@ -38,26 +41,27 @@ namespace New_Scripts
         private float _currentReloadTime;
         private float _currentQueueReloadTime;
 
-        /// <summary>Weapon's bullets damage</summary>
-        public int GetDamage => _damage;
-
-        /// <summary>Bullets count for burst shooting</summary>
-        public int GetBulletsCountInQueue => _bulletsCountInQueue;
-
-        /// <summary>Bullets count in weapon clip</summary>
-        public int GetAmmoInClipCount => _ammoInClipCount;
-
-        /// <summary>Bullets count which uses for reloading</summary>
-        public int GetLeftAmmoCount => _leftAmmoCount;
-
-        /// <summary>Time in seconds between shots</summary>
-        public float GetFireRateInSeconds => _fireRateInSeconds;
-
-        /// <summary>Time in seconds for clip filling</summary>
-        public float GetReloadTime => _reloadTime;
-
-        /// <summary>Time is seconds between two queues</summary>
-        public float GetQueueReloadTime => _queueReloadTime;
+        // /// <summary>Weapon's bullets damage</summary>
+        // public int GetDamage => _damage;
+        //
+        // /// <summary>Bullets count for burst shooting</summary>
+        // public int GetBulletsCountInQueue => _bulletsCountInQueue;
+        //
+        // /// <summary>Bullets count in weapon clip</summary>
+        // public int GetAmmoInClipCount => _ammoInClipCount;
+        //
+        // /// <summary>Bullets count which uses for reloading</summary>
+        // public int GetLeftAmmoCount => _leftAmmoCount;
+        //
+        // /// <summary>Time in seconds between shots</summary>
+        // public float GetFireRateInSeconds => _fireRateInSeconds;
+        //
+        // /// <summary>Time in seconds for clip filling</summary>
+        // public float GetReloadTime => _reloadTime;
+        //
+        // /// <summary>Time is seconds between two queues</summary>
+        // public float GetQueueReloadTime => _queueReloadTime;
+        // TODO can create also for "_current..." values but do you really need it?
 
         protected virtual void Awake()
         {
@@ -137,7 +141,6 @@ namespace New_Scripts
         private void UpdateReloadingTime(ref float time)
         {
             time -= Time.fixedDeltaTime;
-            Debug.Log(Time.fixedDeltaTime);
         }
 
         private void SpawnBullet()

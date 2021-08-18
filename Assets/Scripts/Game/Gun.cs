@@ -9,7 +9,8 @@ namespace Game
         [SerializeField] private GameObject _bulletPrefab;
         [SerializeField] private float _reloadTime;
         private float _currentReloadingTime;
-        [Inject(Id = "Keyboard")] private IInputController _inputController;
+
+        [Inject] private IInputController _inputController;
 
         private void Start()
         {

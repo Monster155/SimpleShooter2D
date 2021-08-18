@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -9,7 +10,9 @@ namespace Game
 
         public override void InstallBindings()
         {
-            Container.Bind<IInputController>().WithId("Keyboard").To<KeyboardController>().AsTransient();
+            _mainCamera = _mainCamera == null ? Camera.main : _mainCamera;
+            // Container.Bind<IInputController>().WithId("Keyboard").To<KeyboardController>().AsSingle();
+            Container.Bind<IInputController>().To<KeyboardController>().AsSingle();
             Container.Bind<Camera>().FromInstance(_mainCamera);
         }
     }
