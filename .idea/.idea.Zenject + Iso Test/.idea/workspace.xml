@@ -1,28 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="MyScipts" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c74f397-5e44-4a0a-ac30-24e1750014f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/CharacterScripts/Factories.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/CharacterScripts/Factories/GunFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/CharacterScripts/Factories/GunFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem/NeDoServer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameSystem/NeDoServer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/AIInputController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/AIInputController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zenject + Iso Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zenject + Iso Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/CharacterHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/CharacterMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/ICharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/ICharacter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/Character.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/MainWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/MainWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scripts/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Bullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Bullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Character.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Character.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterGuns.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterGuns.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterHealth.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterHealth.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/CharacterMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/KnifeWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/KnifeWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/MainWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/MainWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/SecondaryWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/SecondaryWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Weapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scripts/Weapon.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Bullet.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Gun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IInputController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IInputController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/KeyboardController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/KeyboardController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MyMonoInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MyMonoInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/BulletMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/BulletMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Gun.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Gun.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/IInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/IInputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/KeyboardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/KeyboardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/MyMonoInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Installers/MyMonoInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/CTSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/CTSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/ISpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/ISpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/TSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/TSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/InterfaceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/InterfaceController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +76,23 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c34986f8340f4ee898dfd401af37235e1b600/69/7ccda712/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/New Scripts/SecondaryWeapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/CharacterScripts/CharacterGuns.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Map/Spawner/ISpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.2d.tilemap/Editor/GridBrushEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c34986f8340f4ee898dfd401af37235e1b600/69/7ccda712/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/InputControllers/KeyboardController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b8bc167de93e4cd7acb3fce533dc4cbc13a000/ae/bb4bd17f/Time.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/New Scripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/CharacterScripts/Editor/CharacterDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/CharacterScripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.5/Runtime/TimelinePlayable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/CharacterScripts/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b8bc167de93e4cd7acb3fce533dc4cbc13a000/c6/d9bb17d3/TooltipAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="MyScipts" pattern="!file[rider.module]:*&amp;&amp;!file[rider.module]:Packages//*&amp;&amp;!file[rider.module]:Assets//*&amp;&amp;!file[rider.module]:ProjectSettings//*&amp;&amp;!file[rider.module]:Library//*&amp;&amp;!file[rider.module]:Assets/Plugins//*&amp;&amp;!file[rider.module]:*/||file[rider.module]:Assets/Scripts/Menu//*||file[rider.module]:Assets/Scripts/Game//*||file[rider.module]:Assets/Scripts//*" />
   </component>
   <component name="ProjectId" id="1wqgc0pzZRetArZM3OIeVodvXdM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,7 +110,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -101,7 +146,8 @@
       <workItem from="1629191624325" duration="868000" />
       <workItem from="1629207555469" duration="4659000" />
       <workItem from="1629272920372" duration="17919000" />
-      <workItem from="1629297723917" duration="4370000" />
+      <workItem from="1629297723917" duration="4474000" />
+      <workItem from="1629358229289" duration="17028000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;Created simple player with gun&#10;Created updated weapon system">
       <created>1629298147769</created>
@@ -110,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629298147769</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Started creating Character Movement and Health">
+      <created>1629302483326</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629302483326</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +182,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -136,6 +190,11 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit&#10;Created simple player with gun&#10;Created updated weapon system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;Created simple player with gun&#10;Created updated weapon system" />
+    <MESSAGE value="Started creating Character Movement and Health" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started creating Character Movement and Health" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

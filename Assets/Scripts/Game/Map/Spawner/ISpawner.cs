@@ -1,9 +1,9 @@
-using UnityEngine;
+using Game.CharacterScripts;
 
 namespace Game.Map.Spawner
 {
     public interface ISpawner
     {
-        void Spawn(Vector2 pos);
+        void Spawn(Character character);
     }
 }

@@ -1,7 +1,8 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-namespace New_Scripts
+namespace Game.CharacterScripts
 {
     public class CharacterHealth : MonoBehaviour
     {
@@ -11,24 +12,31 @@ namespace New_Scripts
         [SerializeField] [Tooltip("Maximum character Armor points")]
         private int _maxArmor = 100;
 
-        private int _currentHP;
+        [SerializeField] private Image _healthBar;
+        [SerializeField] private Image _armorBar;
         private int _currentArmor;
+
+        private int _currentHP;
+
+        public int CurrentHP => _currentHP;
+        public int CurrentArmor => _currentArmor;
 
         private void Awake()
         {
-            _currentHP = _maxHP;
-            _currentArmor = _maxArmor;
+            ResetHealth();
         }
 
-        private void GetDamage(int damageCount)
+        public event Action<int, int> OnPointsChanged; // HP, armor
+
+        public void GetDamage(int damageCount)
         {
             CalculateDamage(ref damageCount, ref _currentArmor);
+            _armorBar.fillAmount = (float) _currentArmor / _maxArmor;
             CalculateDamage(ref damageCount, ref _currentHP);
+            _healthBar.fillAmount = (float) _currentHP / _maxHP;
 
-            if (_currentHP <= 0)
-            {
-                Debug.Log("You dead");
-            }
+            if (_currentHP <= 0) Debug.Log("You dead");
+            OnPointsChanged?.Invoke(_currentHP, _currentArmor);
         }
 
         private void IncreaseHP(int addPoints)
@@ -53,6 +61,12 @@ namespace New_Scripts
                 damageLeft -= counter;
                 counter = 0;
             }
+        }
+
+        public void ResetHealth()
+        {
+            _currentHP = _maxHP;
+            _currentArmor = _maxArmor;
         }
     }
 }

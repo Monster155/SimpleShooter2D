@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
 
-namespace New_Scripts
+namespace Game.CharacterScripts.Weapons
 {
-    public class Weapon : MonoBehaviour
+    public class FireWeapon : Weapon
     {
         [SerializeField] private Bullet _bulletPrefab;
 
@@ -11,35 +10,37 @@ namespace New_Scripts
         // [SerializeField] private Transform _bulletsContainerTransform; // TODO bullets container
 
         [Space(10f)] [SerializeField] [Tooltip("Weapon's bullets damage")]
-        private int _damage = 10;
+        protected int _damage = 10;
 
         [SerializeField] [Tooltip("Bullets count for burst shooting (0 - for infinity count)")]
-        private int _bulletsCountInQueue = 3;
+        protected int _bulletsCountInQueue = 3;
 
         [SerializeField] [Tooltip("Bullets count in weapon clip (0 - for infinity count)")]
-        private int _ammoInClipCount = 30;
+        protected int _ammoInClipCount = 30;
 
         [SerializeField] [Tooltip("Bullets count which uses for reloading (0 - for infinity count)")]
-        private int _leftAmmoCount = 90;
+        protected int _leftAmmoCount = 90;
 
         [SerializeField] [Tooltip("Time in seconds between shots")]
-        private float _fireRateInSeconds = 0.1f;
+        protected float _fireRateInSeconds = 0.1f;
 
         [SerializeField] [Tooltip("Time in seconds for clip filling")]
-        private float _reloadTime = 3f;
+        protected float _reloadTime = 3f;
 
         [SerializeField] [Tooltip("Time is seconds between two queues")]
-        private float _queueReloadTime = 0.5f;
+        protected float _queueReloadTime = 0.5f;
+
+        private int _currentAmmoInClipCount;
 
         // TODO create changing single / burst / auto shooting
         // TODO change burst mode - queue reloading while no attack
 
         private int _currentBulletsCountInQueue;
-        private int _currentAmmoInClipCount;
-        private int _currentLeftAmmoCount;
         private float _currentFireRateInSeconds;
-        private float _currentReloadTime;
+        private int _currentLeftAmmoCount;
         private float _currentQueueReloadTime;
+        private float _currentReloadTime;
+
 
         // /// <summary>Weapon's bullets damage</summary>
         // public int GetDamage => _damage;
@@ -65,15 +66,10 @@ namespace New_Scripts
 
         protected virtual void Awake()
         {
-            _currentBulletsCountInQueue = _bulletsCountInQueue;
-            _currentAmmoInClipCount = _ammoInClipCount;
-            _currentLeftAmmoCount = _leftAmmoCount;
-            _currentFireRateInSeconds = _fireRateInSeconds;
-            _currentReloadTime = _reloadTime;
-            _currentQueueReloadTime = _queueReloadTime;
+            ResetWeapon();
         }
 
-        protected virtual void Attack()
+        public override void Attack()
         {
             // check is clip empty
             if (_currentAmmoInClipCount > 0 || _ammoInClipCount == 0)
@@ -90,7 +86,7 @@ namespace New_Scripts
                         _currentBulletsCountInQueue--;
                         _currentAmmoInClipCount--;
                         // TODO send bullet
-                        Bullet bullet = Instantiate(_bulletPrefab,
+                        var bullet = Instantiate(_bulletPrefab,
                             _muzzleTransform.position, _muzzleTransform.rotation);
                     }
                 }
@@ -136,6 +132,16 @@ namespace New_Scripts
                     Debug.Log("Empty Ammo: fiasko, bratan");
                 }
             }
+        }
+
+        public override void ResetWeapon()
+        {
+            _currentBulletsCountInQueue = _bulletsCountInQueue;
+            _currentAmmoInClipCount = _ammoInClipCount;
+            _currentLeftAmmoCount = _leftAmmoCount;
+            _currentFireRateInSeconds = _fireRateInSeconds;
+            _currentReloadTime = _reloadTime;
+            _currentQueueReloadTime = _queueReloadTime;
         }
 
         private void UpdateReloadingTime(ref float time)

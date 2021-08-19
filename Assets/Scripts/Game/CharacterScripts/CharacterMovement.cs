@@ -1,8 +1,6 @@
-using Game;
 using UnityEngine;
-using Zenject;
 
-namespace New_Scripts
+namespace Game.CharacterScripts
 {
     public class CharacterMovement : MonoBehaviour
     {
@@ -10,13 +8,18 @@ namespace New_Scripts
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private GameObject _aimObject;
 
-        [Inject] private IInputController _inputController;
+        private IInputController _inputController;
 
         private void FixedUpdate()
         {
             _rigidbody.velocity = _inputController.MovingDirection * speed;
             _aimObject.transform.rotation =
-                Quaternion.Euler(0, 0, _inputController.ShootingDirection(transform.position));
+                Quaternion.Euler(0, 0, _inputController.FindLookAngle(transform.position));
+        }
+
+        public void Init(IInputController inputController)
+        {
+            _inputController = inputController;
         }
     }
 }

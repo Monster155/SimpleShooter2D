@@ -1,8 +1,6 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Object = System.Object;
 
 namespace Menu
 {
@@ -16,14 +14,14 @@ namespace Menu
             _startGameButton.onClick.AddListener(StartGameButton_OnClick);
         }
 
-        private void StartGameButton_OnClick()
-        {
-            SceneManager.LoadScene(_gameSceneName);
-        }
-
         private void OnDisable()
         {
             _startGameButton.onClick.RemoveListener(StartGameButton_OnClick);
+        }
+
+        private void StartGameButton_OnClick()
+        {
+            SceneManager.LoadScene(_gameSceneName);
         }
     }
 }

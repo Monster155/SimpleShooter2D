@@ -31,10 +31,10 @@ namespace Game
             }
         }
 
-        public float ShootingDirection(Vector2 playerPosition)
+        public float FindLookAngle(Vector2 playerPosition)
         {
             Vector2 mousePos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            float angle = Vector2.SignedAngle(Vector2.up, mousePos - playerPosition);
+            var angle = Vector2.SignedAngle(Vector2.up, mousePos - playerPosition);
             return angle;
         }
 
