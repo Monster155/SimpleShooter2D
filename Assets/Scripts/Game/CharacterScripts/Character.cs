@@ -34,10 +34,10 @@ namespace Game.CharacterScripts
         public event Action OnCharacterDead;
         public event Action<WeaponSlot, Weapon> OnWeaponChanged;
 
-        public void Init(bool isRed, IInputController inputController)
+        public void UpdateInput(Vector2 movingDirection, float rotationAngle, bool isFire)
         {
-            _characterMovement.Init(inputController);
-            _characterGuns.Init(inputController);
+            _characterMovement.UpdateInput(movingDirection, rotationAngle);
+            _characterGuns.UpdateInput(isFire);
         }
 
         private void CharacterHealth_OnPointsChanged(int newHP, int newArmor)

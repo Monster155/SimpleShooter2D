@@ -6,13 +6,16 @@ namespace Game.CharacterScripts
 {
     public class CharacterGuns : MonoBehaviour
     {
+        public event Action<Weapon> OnMainWeaponChanged;
+        public event Action<Weapon> OnSecondaryWeaponChanged;
+
         [SerializeField] private MainFireWeapon _mainFireWeapon;
         [SerializeField] private SecondaryFireWeapon _secondaryFireWeapon;
 
         // [SerializeField] private KnifeFireWeapon knifeFireWeapon;
 
         private Weapon _currentFireWeapon;
-        private IInputController _inputController;
+        private bool _isFire;
 
         private void Awake()
         {
@@ -27,17 +30,14 @@ namespace Game.CharacterScripts
             _currentFireWeapon.gameObject.SetActive(true);
         }
 
-        private void FixedUpdate()
+        public void UpdateInput(bool isFire)
         {
-            if (_inputController.IsFire) _currentFireWeapon.Attack();
+            _isFire = isFire;
         }
 
-        public event Action<Weapon> OnMainWeaponChanged;
-        public event Action<Weapon> OnSecondaryWeaponChanged;
-
-        public void Init(IInputController inputController)
+        private void FixedUpdate()
         {
-            _inputController = inputController;
+            if (_isFire) _currentFireWeapon.Attack();
         }
 
         public void ResetWeapons()

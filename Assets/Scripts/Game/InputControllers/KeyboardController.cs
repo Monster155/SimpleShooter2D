@@ -7,6 +7,11 @@ namespace Game
     {
         [Inject] private Camera _mainCamera;
 
+        public KeyboardController()
+        {
+            _mainCamera = _mainCamera == null ? Camera.main : _mainCamera;
+        }
+
         public Vector2 MovingDirection
         {
             // float x = Input.GetAxis("Horizontal");
@@ -33,6 +38,7 @@ namespace Game
 
         public float FindLookAngle(Vector2 playerPosition)
         {
+            Debug.Log("Cam: " + _mainCamera);
             Vector2 mousePos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
             var angle = Vector2.SignedAngle(Vector2.up, mousePos - playerPosition);
             return angle;

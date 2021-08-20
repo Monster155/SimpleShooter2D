@@ -12,7 +12,6 @@ namespace Game.GameSystem
         [SerializeField] private GameObject _characterPrefab;
         [SerializeField] private List<CTSpawner> _blueSpawners;
         [SerializeField] private List<TSpawner> _redSpawners;
-        [SerializeField] private CharacterFactory _characterFactory;
 
         private List<Character> _blueCharacters;
         private List<Character> _redCharacters;
@@ -31,8 +30,9 @@ namespace Game.GameSystem
         {
             for (var i = 0; i < _teamMembersCount; i++)
             {
-                _blueCharacters.Add(_characterFactory.CreateCharacter(_characterPrefab, false, BlueChar_OnCharacterDead));
-                _redCharacters.Add(_characterFactory.CreateCharacter(_characterPrefab, true, RedChar_OnCharacterDead));
+                // TODO move all code to server
+                // _blueCharacters.Add(_characterFactory.CreateCharacter(_characterPrefab, false, BlueChar_OnCharacterDead));
+                // _redCharacters.Add(_characterFactory.CreateCharacter(_characterPrefab, true, RedChar_OnCharacterDead));
             }
 
             _blueScore = 0;
@@ -48,8 +48,8 @@ namespace Game.GameSystem
 
             for (var i = 0; i < _teamMembersCount; i++)
             {
-                _blueCharacters[i] = _characterFactory.ResetCharacter(_blueCharacters[i], _blueSpawners[i]);
-                _redCharacters[i] = _characterFactory.ResetCharacter(_redCharacters[i], _redSpawners[i]);
+                // _blueCharacters[i] = _characterFactory.ResetCharacter(_blueCharacters[i], _blueSpawners[i]);
+                // _redCharacters[i] = _characterFactory.ResetCharacter(_redCharacters[i], _redSpawners[i]);
             }
         }
 
